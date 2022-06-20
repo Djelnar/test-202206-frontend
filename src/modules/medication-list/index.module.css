@@ -1,0 +1,74 @@
+.root {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  gap: 8px;
+}
+
+.root::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+.root::-webkit-scrollbar-thumb {
+  background: hotpink;
+  border-radius: 4px;
+}
+
+.createButton {
+  align-self: flex-start;
+}
+
+.tableHeader {
+  padding: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 24px 100px 24px 160px 24px 24px;
+  gap: 8px;
+  align-items: center;
+}
+
+.row {
+  border-radius: 8px;
+  background-color: papayawhip;
+
+  padding: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 24px 100px 24px 160px 24px 24px;
+  gap: 8px;
+  align-items: center;
+}
+
+.column {
+  font-weight: bold;
+  overflow: hidden;
+}
+.center {
+  text-align: center;
+}
+.action {
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 100ms ease-in;
+}
+
+.action:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.action:not(:disabled):hover {
+  transform: scale(1.1);
+  transition: transform 100ms ease-out;
+}
+
+.action img {
+  width: 100%;
+  height: 100%;
+}

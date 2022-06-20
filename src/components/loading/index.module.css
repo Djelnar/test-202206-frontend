@@ -1,0 +1,14 @@
+.root {
+  background-color: papayawhip;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 80px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.title {
+  color: pink;
+  text-align: center;
+}

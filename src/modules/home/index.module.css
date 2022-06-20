@@ -1,0 +1,41 @@
+.root {
+  background-color: papayawhip;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 80px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  height: calc(100vh - 160px);
+
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  padding: 24px;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.email {
+  color: pink;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logout {
+  background-color: pink;
+}
